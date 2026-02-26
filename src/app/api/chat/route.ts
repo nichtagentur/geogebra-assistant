@@ -3,6 +3,8 @@ import Anthropic from '@anthropic-ai/sdk';
 import { searchDocs, Doc } from '@/lib/search';
 import knowledgeBaseData from '../../../../public/knowledge-base.json';
 
+export const maxDuration = 60;
+
 const knowledgeBase: Doc[] = knowledgeBaseData as Doc[];
 
 const SYSTEM_PROMPT = `You are the GeoGebra Calculator Suite Assistant. You help students and teachers learn how to use GeoGebra tools and commands.
@@ -66,8 +68,10 @@ export async function POST(req: NextRequest) {
           }
           controller.enqueue(encoder.encode('data: [DONE]\n\n'));
           controller.close();
-        } catch (err) {
-          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: '\n\n[Error: Stream interrupted]' })}\n\n`));
+        } catch (err: unknown) {
+          const msg = err instanceof Error ? err.message : String(err);
+          console.error('Stream error:', msg);
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: `\n\n[Error: ${msg}]` })}\n\n`));
           controller.enqueue(encoder.encode('data: [DONE]\n\n'));
           controller.close();
         }
