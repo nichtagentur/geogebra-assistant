@@ -18,60 +18,72 @@ CRITICAL RULES:
 8. Answer in the same language the user writes in. The manual excerpts are in English but translate your explanation to match the user's language.`;
 
 export async function POST(req: NextRequest) {
-  const { message, history } = await req.json();
+  try {
+    const { message, history } = await req.json();
 
-  if (!message || typeof message !== 'string') {
-    return Response.json({ error: 'Message is required' }, { status: 400 });
-  }
-
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    return Response.json({ error: 'API key not configured' }, { status: 500 });
-  }
-
-  const relevant = searchDocs(knowledgeBase, message, 8);
-
-  const contextBlock = relevant
-    .map((doc, i) => `--- Manual Section ${i + 1}: ${doc.title} (${doc.category}) ---\n${doc.content}`)
-    .join('\n\n');
-
-  const systemMessage = `${SYSTEM_PROMPT}\n\n=== GEOGEBRA MANUAL EXCERPTS ===\n${contextBlock}\n=== END OF EXCERPTS ===`;
-
-  const messages: { role: 'user' | 'assistant'; content: string }[] = [];
-  if (history && Array.isArray(history)) {
-    for (const msg of history.slice(-6)) {
-      messages.push({ role: msg.role, content: msg.content });
+    if (!message || typeof message !== 'string') {
+      return Response.json({ error: 'Message is required' }, { status: 400 });
     }
-  }
-  messages.push({ role: 'user', content: message });
 
-  const client = new Anthropic({ apiKey });
+    const apiKey = process.env.ANTHROPIC_API_KEY;
+    if (!apiKey) {
+      return Response.json({ error: 'API key not configured' }, { status: 500 });
+    }
 
-  const stream = await client.messages.stream({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 1024,
-    system: systemMessage,
-    messages,
-  });
+    const relevant = searchDocs(knowledgeBase, message, 8);
 
-  const encoder = new TextEncoder();
-  const readable = new ReadableStream({
-    async start(controller) {
-      for await (const event of stream) {
-        if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
-          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: event.delta.text })}\n\n`));
-        }
+    const contextBlock = relevant
+      .map((doc, i) => `--- Manual Section ${i + 1}: ${doc.title} (${doc.category}) ---\n${doc.content}`)
+      .join('\n\n');
+
+    const systemMessage = `${SYSTEM_PROMPT}\n\n=== GEOGEBRA MANUAL EXCERPTS ===\n${contextBlock}\n=== END OF EXCERPTS ===`;
+
+    const messages: { role: 'user' | 'assistant'; content: string }[] = [];
+    if (history && Array.isArray(history)) {
+      for (const msg of history.slice(-6)) {
+        messages.push({ role: msg.role, content: msg.content });
       }
-      controller.enqueue(encoder.encode('data: [DONE]\n\n'));
-      controller.close();
-    },
-  });
+    }
+    messages.push({ role: 'user', content: message });
 
-  return new Response(readable, {
-    headers: {
-      'Content-Type': 'text/event-stream',
-      'Cache-Control': 'no-cache',
-      Connection: 'keep-alive',
-    },
-  });
+    const client = new Anthropic({ apiKey });
+
+    const stream = await client.messages.stream({
+      model: 'claude-sonnet-4-5',
+      max_tokens: 1024,
+      system: systemMessage,
+      messages,
+    });
+
+    const encoder = new TextEncoder();
+    const readable = new ReadableStream({
+      async start(controller) {
+        try {
+          for await (const event of stream) {
+            if (event.type === 'content_block_delta' && event.delta.type === 'text_delta') {
+              controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: event.delta.text })}\n\n`));
+            }
+          }
+          controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+          controller.close();
+        } catch (err) {
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: '\n\n[Error: Stream interrupted]' })}\n\n`));
+          controller.enqueue(encoder.encode('data: [DONE]\n\n'));
+          controller.close();
+        }
+      },
+    });
+
+    return new Response(readable, {
+      headers: {
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache',
+        Connection: 'keep-alive',
+      },
+    });
+  } catch (err: unknown) {
+    const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+    console.error('Chat API error:', errorMessage);
+    return Response.json({ error: errorMessage }, { status: 500 });
+  }
 }
