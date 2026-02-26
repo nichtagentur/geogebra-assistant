@@ -2,19 +2,55 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #f8f9fb;
-  --foreground: #1a1a2e;
-  --geogebra-purple: #6557d2;
-  --geogebra-blue: #4285f4;
-  --geogebra-light: #ededfc;
+  /* GeoGebra Design System - Purple Scale */
+  --ggb-purple-50: #f3f0ff;
+  --ggb-purple-100: #f3f0ff;
+  --ggb-purple-200: #d2ccff;
+  --ggb-purple-300: #b9b1fc;
+  --ggb-purple-400: #a397fc;
+  --ggb-purple-500: #8172f7;
+  --ggb-purple-600: #6557d2;
+  --ggb-purple-700: #5145a8;
+  --ggb-purple-800: #3b337a;
+  --ggb-purple-900: #191533;
+
+  /* GeoGebra Design System - Neutral Scale */
+  --ggb-neutral-100: #fafafc;
+  --ggb-neutral-200: #f3f2f7;
+  --ggb-neutral-300: #e6e6eb;
+  --ggb-neutral-400: #d1d0d6;
+  --ggb-neutral-500: #b4b3ba;
+  --ggb-neutral-600: #85848a;
+  --ggb-neutral-700: #6e6d73;
+  --ggb-neutral-800: #2f2f33;
+  --ggb-neutral-900: #1c1c1f;
+
+  /* GeoGebra Design System - Accent Teal */
+  --ggb-teal-200: #ccfffa;
+  --ggb-teal-500: #57d9ca;
+  --ggb-teal-700: #388c83;
+
+  /* Semantic tokens */
+  --background: var(--ggb-neutral-100);
+  --foreground: var(--ggb-neutral-900);
+  --primary: var(--ggb-purple-600);
+  --primary-hover: var(--ggb-purple-700);
+  --primary-light: var(--ggb-purple-50);
+  --primary-selection: rgba(101, 87, 210, 0.2);
+  --surface: #ffffff;
+  --border: var(--ggb-neutral-300);
+  --text-secondary: var(--ggb-neutral-600);
+  --text-tertiary: var(--ggb-neutral-500);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-geogebra: var(--geogebra-purple);
-  --color-geogebra-blue: var(--geogebra-blue);
-  --color-geogebra-light: var(--geogebra-light);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-light: var(--primary-light);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -34,6 +70,6 @@ body {
 .streaming-cursor::after {
   content: '|';
   animation: blink 0.8s infinite;
-  color: var(--geogebra-purple);
+  color: var(--primary);
   font-weight: bold;
 }

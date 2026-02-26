@@ -107,16 +107,16 @@ export default function Home() {
   const showWelcome = messages.length === 0;
 
   return (
-    <div className="flex flex-col h-screen max-h-screen">
-      {/* Header */}
-      <header className="bg-gradient-to-r from-[#6557d2] to-[#4285f4] text-white px-4 py-3 shadow-md flex-shrink-0">
+    <div className="flex flex-col h-screen max-h-screen bg-[#fafafc]">
+      {/* Header - GeoGebra purple-600 solid */}
+      <header className="bg-[#6557d2] text-white px-4 py-3 shadow-md flex-shrink-0">
         <div className="max-w-3xl mx-auto flex items-center gap-3">
           <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center text-xl font-bold">
             G
           </div>
           <div>
             <h1 className="text-lg font-semibold leading-tight">GeoGebra Assistant</h1>
-            <p className="text-sm text-white/80">Ask me about tools, commands & features</p>
+            <p className="text-sm text-white/70">Ask me about tools, commands & features</p>
           </div>
         </div>
       </header>
@@ -126,13 +126,13 @@ export default function Home() {
         <div className="max-w-3xl mx-auto space-y-4">
           {showWelcome && (
             <div className="text-center py-12">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#6557d2] to-[#4285f4] rounded-2xl flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6 shadow-lg">
+              <div className="w-20 h-20 bg-[#6557d2] rounded-2xl flex items-center justify-center text-white text-3xl font-bold mx-auto mb-6 shadow-lg">
                 G
               </div>
-              <h2 className="text-2xl font-semibold text-gray-800 mb-2">
+              <h2 className="text-2xl font-semibold text-[#1c1c1f] mb-2">
                 Welcome to GeoGebra Assistant
               </h2>
-              <p className="text-gray-500 mb-8 max-w-md mx-auto">
+              <p className="text-[#85848a] mb-8 max-w-md mx-auto">
                 I can help you find the right tools and commands in GeoGebra Calculator Suite. Ask me anything!
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-lg mx-auto">
@@ -140,7 +140,7 @@ export default function Home() {
                   <button
                     key={q}
                     onClick={() => sendMessage(q)}
-                    className="text-left px-4 py-3 rounded-xl border border-gray-200 hover:border-[#6557d2] hover:bg-[#ededfc] transition-colors text-sm text-gray-700 hover:text-[#6557d2]"
+                    className="text-left px-4 py-3 rounded-xl border border-[#e6e6eb] bg-white hover:border-[#6557d2] hover:bg-[#f3f0ff] transition-colors text-sm text-[#2f2f33] hover:text-[#6557d2]"
                   >
                     {q}
                   </button>
@@ -158,7 +158,7 @@ export default function Home() {
                 className={`max-w-[85%] rounded-2xl px-4 py-3 text-[15px] leading-relaxed ${
                   msg.role === "user"
                     ? "bg-[#6557d2] text-white rounded-br-md"
-                    : "bg-white border border-gray-200 text-gray-800 rounded-bl-md shadow-sm"
+                    : "bg-white border border-[#e6e6eb] text-[#2f2f33] rounded-bl-md shadow-sm"
                 } ${
                   msg.role === "assistant" && isLoading && i === messages.length - 1
                     ? "streaming-cursor"
@@ -166,7 +166,7 @@ export default function Home() {
                 }`}
               >
                 {msg.role === "assistant" ? (
-                  <div className="prose prose-sm max-w-none prose-headings:text-[#6557d2] prose-headings:mt-3 prose-headings:mb-1 prose-p:my-1.5 prose-li:my-0.5 prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-[#6557d2] prose-code:before:content-none prose-code:after:content-none prose-table:text-sm prose-hr:my-3">
+                  <div className="prose prose-sm max-w-none prose-headings:text-[#5145a8] prose-headings:mt-3 prose-headings:mb-1 prose-p:my-1.5 prose-li:my-0.5 prose-code:bg-[#f3f0ff] prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-[#6557d2] prose-code:before:content-none prose-code:after:content-none prose-table:text-sm prose-hr:my-3 prose-strong:text-[#1c1c1f] prose-a:text-[#6557d2] prose-a:no-underline hover:prose-a:underline">
                     <ReactMarkdown>{msg.content}</ReactMarkdown>
                   </div>
                 ) : (
@@ -180,7 +180,7 @@ export default function Home() {
       </main>
 
       {/* Input area */}
-      <footer className="border-t border-gray-200 bg-white px-4 py-3 flex-shrink-0">
+      <footer className="border-t border-[#e6e6eb] bg-white px-4 py-3 flex-shrink-0">
         <div className="max-w-3xl mx-auto flex gap-2 items-end">
           <textarea
             ref={inputRef}
@@ -189,18 +189,18 @@ export default function Home() {
             onKeyDown={handleKeyDown}
             placeholder="Ask about GeoGebra tools, commands, or features..."
             rows={1}
-            className="flex-1 resize-none rounded-xl border border-gray-300 px-4 py-3 text-[15px] focus:outline-none focus:border-[#6557d2] focus:ring-2 focus:ring-[#6557d2]/20 placeholder:text-gray-400"
+            className="flex-1 resize-none rounded-xl border border-[#d1d0d6] px-4 py-3 text-[15px] focus:outline-none focus:border-[#6557d2] focus:ring-2 focus:ring-[#6557d2]/20 placeholder:text-[#b4b3ba] text-[#2f2f33]"
             disabled={isLoading}
           />
           <button
             onClick={() => sendMessage(input)}
             disabled={!input.trim() || isLoading}
-            className="bg-[#6557d2] text-white rounded-xl px-5 py-3 font-medium text-[15px] hover:bg-[#5446c1] disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex-shrink-0"
+            className="bg-[#6557d2] text-white rounded-xl px-5 py-3 font-medium text-[15px] hover:bg-[#5145a8] disabled:opacity-40 disabled:cursor-not-allowed transition-colors flex-shrink-0"
           >
             {isLoading ? "..." : "Send"}
           </button>
         </div>
-        <p className="text-center text-xs text-gray-400 mt-2 max-w-3xl mx-auto">
+        <p className="text-center text-xs text-[#b4b3ba] mt-2 max-w-3xl mx-auto">
           Answers are based on the official GeoGebra Manual. For the full documentation, visit{" "}
           <a
             href="https://geogebra.github.io/docs/manual/en/"
