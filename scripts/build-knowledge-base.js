@@ -76,7 +76,15 @@ function processFiles(dir, baseDir) {
 
 console.log(`Processing .adoc files from: ${MANUAL_DIR}`);
 const docs = processFiles(MANUAL_DIR, MANUAL_DIR);
-console.log(`Processed ${docs.length} documents`);
+console.log(`Processed ${docs.length} manual documents`);
+
+// Load tutorial content from the "Learn Calculator Suite" book
+const TUTORIAL_FILE = path.join(__dirname, 'tutorial-content.json');
+if (fs.existsSync(TUTORIAL_FILE)) {
+  const tutorials = JSON.parse(fs.readFileSync(TUTORIAL_FILE, 'utf-8'));
+  docs.push(...tutorials);
+  console.log(`Added ${tutorials.length} tutorial lessons`);
+}
 
 // Ensure public dir exists
 const publicDir = path.dirname(OUTPUT_FILE);
@@ -90,3 +98,4 @@ console.log(`Knowledge base written to ${OUTPUT_FILE} (${sizeMB} MB)`);
 const cats = {};
 docs.forEach(d => { cats[d.category] = (cats[d.category] || 0) + 1; });
 console.log('Categories:', cats);
+console.log(`Total: ${docs.length} documents`);

@@ -1,0 +1,188 @@
+[
+  {
+    "title": "Comparison of GeoGebra Math Apps",
+    "category": "tutorial",
+    "path": "tutorial/first-steps/comparison-of-apps",
+    "content": "Comparison of GeoGebra Math Apps (Learn Calculator Suite - First Steps)\n\nGeoGebra offers a suite of mathematical applications. Each app is designed for specific purposes:\n\n- Scientific Calculator: Basic calculations and scientific functions\n- Graphing Calculator: Plotting and analyzing functions in 2D\n- Geometry: Constructing geometric figures and exploring properties\n- Calculator Suite: The comprehensive all-in-one app combining all features\n- CAS Calculator: Computer Algebra System for symbolic computation\n- 3D Calculator: Three-dimensional visualizations and constructions\n- GeoGebra Classic: The traditional full-featured version\n\nKey points:\n- Choose the app based on your needs (graphing, geometry, 3D, etc.)\n- Calculator Suite is the successor of GeoGebra Classic and includes all features\n- All apps support Exam Mode for assessments\n- Use identical software across classroom instruction, homework, and assessments\n- Apps are available on web, Android, iOS, Windows, and MacOS"
+  },
+  {
+    "title": "Introduction to GeoGebra Calculator Suite",
+    "category": "tutorial",
+    "path": "tutorial/first-steps/introduction",
+    "content": "Introduction to GeoGebra Calculator Suite (Learn Calculator Suite - First Steps)\n\nGeoGebra Calculator Suite is a dynamic mathematics application integrating geometry and algebra. It is available on web, Android, iOS, Windows, and MacOS.\n\nCore capabilities:\n- Plot functions, equations, curves and surfaces in 2D and 3D\n- Solve equations\n- Compute calculus operations (derivatives, integrals)\n- Perform statistical analysis\n- Create dynamic geometric constructions\n\nPrimary features:\n- Graphing: Plot and analyze functions\n- Table creation: Generate value tables for functions\n- Equation solving: Solve equations and systems\n- Derivatives and integrals: Compute calculus operations\n- Transformation exploration with sliders: Use interactive parameters\n- Geometric construction: Create shapes, lines, circles\n- Measurements: Calculate distances, areas, angles\n- Probability calculations: Work with distributions\n- Save and share work\n\nTouchscreen interaction:\n- Drag objects to move them\n- Zoom with multi-finger gestures (pinch to zoom)\n- Pan views by dragging the background\n- Access settings through tapping the gear icon"
+  },
+  {
+    "title": "Explore the GeoGebra App",
+    "category": "tutorial",
+    "path": "tutorial/first-steps/explore-the-app",
+    "content": "Explore the GeoGebra Calculator Suite App (Learn Calculator Suite - First Steps)\n\nThe GeoGebra Calculator Suite has five calculator tools:\n1. Graphing Calculator\n2. 3D Calculator\n3. Geometry\n4. CAS (Computer Algebra System)\n5. Probability\n\nAll views are dynamically connected - modifications in one view immediately display in other views.\n\nCore interface elements:\n- Tools View: Contains geometric and mathematical instruments for creating objects\n- Algebra View: Provides algebraic input using commands and functions via the Input Bar\n- Table View: Generates value tables for functions\n- Distribution Tab: Calculates probability distributions\n\nKey skills:\n- Switch between calculator modes using the tabs at the top\n- Extend or hide views based on your needs\n- Use undo/redo buttons for corrections\n- Customize settings for axes and grids\n- Save and share your work"
+  },
+  {
+    "title": "Algebra View in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/first-steps/algebra-view",
+    "content": "Algebra View in GeoGebra Calculator Suite (Learn Calculator Suite - First Steps)\n\nThe Algebra View lists algebraic representations of all created objects (coordinates, equations) in order of creation.\n\nAvailable in: Graphing Calculator, 3D Calculator, Geometry, CAS tools.\n\nCore skills:\n- Enter algebraic input and commands through the Input Bar\n- Use the Virtual Keyboard with four layouts:\n  1. Numbers and basic operators\n  2. Advanced operators\n  3. Latin letters\n  4. Greek letters\n- Use the equation editor for complex expressions (fractions, exponents, roots)\n- Access command help by typing a command name\n\nPractical capabilities:\n- Edit objects by clicking on them in the Algebra View\n- Show/hide objects using the visibility dot\n- Delete items from the context menu\n- Extend to full-screen mode\n\nHands-on exercise:\n1. Enter a trigonometric function like f(x) = sin(x)\n2. Use the Roots command: Roots(f) to find function zeros\n3. The results appear both in the Algebra View and Graphics View"
+  },
+  {
+    "title": "Tools View in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/first-steps/tools-view",
+    "content": "Tools View in GeoGebra Calculator Suite (Learn Calculator Suite - First Steps)\n\nThe Tools View is available in Graphing Calculator, 3D Calculator, and Geometry applications.\n\nSix primary tools covered:\n\n1. Intersection Tool: Creates intersection points between two objects. Select the tool, then click on two objects to find their intersection points.\n\n2. Roots Tool: Locates function zeros. For polynomials, it finds all roots. For other functions, it finds roots within the visible window.\n\n3. Extremum Tool: Identifies local maximum and minimum points of a function. Select the tool and click on the function.\n\n4. Slider Tool: Generates adjustable number or angle parameters. You can customize the interval (min/max) and increment. Sliders allow dynamic exploration of function parameters.\n\n5. Show/Hide Objects Tool: Conceals auxiliary objects (like construction lines) while maintaining their mathematical presence. Hidden objects still affect the construction but aren't visible.\n\n6. Delete Tool: Removes unnecessary objects from the construction.\n\nAccess the Tools View by clicking the tools icon in the sidebar."
+  },
+  {
+    "title": "Table View in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/first-steps/table-view",
+    "content": "Table View in GeoGebra Calculator Suite (Learn Calculator Suite - First Steps)\n\nThe Table View generates and analyzes function values systematically.\n\nAvailable in: Graphing Calculator and CAS tools.\n\nMain objectives:\n- Generate value tables for functions\n- Visualize points from the table on the graph\n- Edit functions and see updates in the table\n- Manage table ranges and step sizes\n\nHow to use:\n1. Enter a function in the Input Bar (e.g., f(x) = x^2)\n2. Access Table View via the context menu (three dots next to the function) or click the Table tab\n3. Configure table parameters:\n   - Start value: The first x-value\n   - End value: The last x-value\n   - Step increment: The spacing between x-values\n4. Toggle point visibility to show/hide points on the graph\n5. You can add multiple functions to compare their values side by side\n\nAdvanced features:\n- Modify range parameters at any time\n- Edit function expressions directly\n- Remove columns you don't need\n- Extend to full-screen for better viewing"
+  },
+  {
+    "title": "Graphics View in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/first-steps/graphics-view",
+    "content": "Graphics View in GeoGebra Calculator Suite (Learn Calculator Suite - First Steps)\n\nThe Graphics View is the central workspace where mathematical objects are displayed and manipulated.\n\nAvailable in: Graphing Calculator, 3D Calculator, Geometry, CAS applications.\n\nFour main topics:\n\n1. Core functionality:\n   - Displays graphical representations of all created objects\n   - Access the Tools View to create new objects directly in the Graphics View\n\n2. Object editing:\n   - Select objects by clicking on them (this triggers the Style Bar)\n   - Modify colors, line thickness, and point styles\n   - Delete objects from the context menu\n\n3. Customization:\n   - Click the Settings button (gear icon) to customize the workspace\n   - Show/hide axes, change grid type, adjust labels\n   - Change axis labels and tick spacing\n\n4. View management:\n   - Toggle between Graphics View alone or with Algebra View\n   - Drag to pan the view\n   - Pinch or scroll to zoom\n   - Use the home button to reset the default view"
+  },
+  {
+    "title": "Distribution Tab in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/first-steps/distribution-tab",
+    "content": "Distribution Tab in GeoGebra Calculator Suite (Learn Calculator Suite - First Steps)\n\nThe Distribution Tab calculates and graphs probability distributions.\n\nAvailable distributions include: Normal, Binomial, and many others.\n\nKey skills:\n\n1. Interval probability: Computing P(a <= X <= b)\n   - Click the 'Interval' button, then set lower and upper bounds\n\n2. Left-sided distribution: Computing P(X <= x)\n   - Click 'Left Sided' button, enter the upper bound\n\n3. Right-sided distribution: Computing P(x <= X)\n   - Click 'Right Sided' button, enter the lower bound\n\n4. Two-tailed distribution: Computing combined tail probabilities\n   - Click 'Two Tailed' button, set both bounds\n\n5. Function toggle: Switch between probability density function (PDF) and cumulative distribution function (CDF)\n\n6. Overlay feature: Add a normal curve overlay for comparison with other distributions\n\nHow to access:\n- Switch to the Probability calculator mode\n- Select the distribution type from the dropdown menu\n- Adjust parameters (mean, standard deviation for Normal; n, p for Binomial)\n- Use the buttons to calculate different probability types"
+  },
+  {
+    "title": "Intersection of Functions in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/intersection-of-functions",
+    "content": "Intersection of Functions (Learn Calculator Suite - Basic)\n\nThis tutorial teaches how to find where two mathematical functions intersect using dynamic visualization.\n\nSeven-step process:\n1. Enter a linear function f(x) = a*x + b in the Input Bar. GeoGebra auto-generates sliders for parameters a and b.\n2. Make sliders visible in the Graphics View by clicking the visibility dots.\n3. Adjust slider values to observe how the graph changes dynamically.\n4. Create a quadratic function g(x) = x^2\n5. Use the Intersect command: Intersect(f, g) to find intersection points A and B.\n6. Manipulate the sliders to see how intersection points update in real time.\n7. Apply color formatting to distinguish the functions.\n\nKey concepts:\n- The Intersect() command finds all intersection points between two functions\n- Sliders make functions parametric and interactive\n- Changes in parameters immediately update the graph and intersection points\n- This technique works for any combination of function types"
+  },
+  {
+    "title": "Sine Functions in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/sine-functions",
+    "content": "Sine Functions (Learn Calculator Suite - Basic)\n\nThis tutorial teaches visualization and manipulation of sine functions using parametric equations and interactive sliders.\n\nSteps:\n1. Start with f(x) = sin(x) in the Input Bar\n2. Then explore the parametric function g(t) = a * sin(omega * t + phi)\n   - Use the virtual keyboard to enter Greek letters\n   - GeoGebra automatically creates sliders for a, omega, and phi\n\nInteractive parameters:\n- a (amplitude): Controls vertical stretching. Larger values = taller waves.\n- omega (frequency): Controls horizontal compression/stretching. Larger values = more cycles.\n- phi (phase shift): Controls horizontal translation. Changes where the wave starts.\n\nExploration:\n- Drag sliders to see how each parameter affects the sine curve\n- Compare the parametric function with the original sin(x)\n- Replace sine with cosine (cos) to compare trigonometric behaviors\n\nTip: Use the Greek keyboard layout on the virtual keyboard to type omega and phi."
+  },
+  {
+    "title": "Table of Values for Exponential Functions",
+    "category": "tutorial",
+    "path": "tutorial/basic/table-of-values",
+    "content": "Table of Values (Learn Calculator Suite - Basic)\n\nThis tutorial teaches creation and comparison of value tables for exponential functions.\n\nFunctions explored:\n- f(x) = 50 * 1.2^x (slow exponential growth)\n- g(x) = 5 * 2^x (fast exponential growth)\n\nSteps:\n1. Enter the first function f(x) = 50 * 1.2^x in the Input Bar\n2. Enter the second function g(x) = 5 * 2^x\n3. Zoom and navigate the Graphics View to see both curves\n4. Access the context menu (three dots) and select 'Table of Values'\n5. Set table parameters: start = 0, end = 10, step = 1\n6. Compare function values in the Table View to see where g(x) overtakes f(x)\n\nKey learning: Even though f(x) starts much larger (50 vs 5), the faster growth rate of g(x) (doubling each step) eventually overtakes f(x). The table makes this numerically visible."
+  },
+  {
+    "title": "Color, Size and Style in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/color-size-style",
+    "content": "Color, Size and Style (Learn Calculator Suite - Basic)\n\nThis tutorial teaches customization of appearance for mathematical objects and interface elements.\n\nActivity:\n1. Create a linear function: y = 0.5x - 3\n2. Create a quadratic function: g(x) = x^2 - x - 2\n3. Create a dynamic point using slider parameters\n\nCustomization skills:\n- Select an object to open the Style Bar\n- Change colors of functions, points, and shapes\n- Adjust line thickness and style (solid, dashed, dotted)\n- Modify point size and style\n- Change label display options\n\nSettings (gear icon):\n- Global settings: Language, font size, rounding\n- Graphics settings: Show/hide axes, grid type, axis labels, tick spacing\n- Algebra settings: Description style, coordinate format\n\nTip: Formatting makes your constructions clearer and more professional. Use different colors to distinguish multiple functions on the same graph."
+  },
+  {
+    "title": "Rhombus Construction in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/rhombus",
+    "content": "Rhombus Construction (Learn Calculator Suite - Basic)\n\nThis tutorial teaches rhombus construction using geometric tools.\n\nNine sequential construction steps:\n1. Create a segment using the Segment tool between two points A and B\n2. Draw a line through endpoint B using the Line tool\n3. Construct a circle centered at B passing through point A using Circle with Center through Point\n4. Find the intersection between the line and the circle using the Intersection tool - this gives point C\n5. Add a parallel line through A, parallel to line BC, using the Parallel Line tool\n6. Create another parallel line through C, parallel to segment AB\n7. Locate the fourth vertex D by intersecting the two new parallel lines\n8. Form the polygon by connecting all four points counterclockwise using the Polygon tool: A, B, C, D\n9. Hide auxiliary elements (lines, circle) for a clean diagram using Show/Hide Objects\n\nWhy this works: A rhombus has all four sides equal length (ensured by the circle) and opposite sides parallel (ensured by the parallel lines)."
+  },
+  {
+    "title": "Incircle of a Triangle in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/incircle-of-triangle",
+    "content": "Incircle of a Triangle (Learn Calculator Suite - Basic)\n\nThis tutorial teaches construction of the incircle (inscribed circle) of a triangle.\n\nThe incircle is the largest circle that fits inside a triangle, touching all three sides.\n\nTen-step construction process:\n1. Create a triangle using the Polygon tool - select three points A, B, C\n2. Select the Angle Bisector tool and click on three points to create the angle bisector of one angle\n3. Create the angle bisector of a second angle\n4. Use the Intersection tool to find where the two bisectors meet - this is the incenter (point D)\n5. Create a perpendicular line from the incenter D to one side of the triangle using Perpendicular Line tool\n6. Find the intersection of this perpendicular with the triangle side - this gives the radius point\n7. Construct a circle centered at D through the radius point using Circle with Center through Point\n8. Verify the circle touches all three sides\n9. Manipulate the triangle vertices to verify the construction works for any triangle shape\n10. Hide auxiliary elements for a clean result\n\nKey concept: The incenter is always equidistant from all three sides of the triangle, which is why the incircle touches all three sides."
+  },
+  {
+    "title": "Geometric Transformations in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/transformations",
+    "content": "Geometric Transformations (Learn Calculator Suite - Basic)\n\nThis tutorial teaches three fundamental geometric transformations applied to a custom-constructed letter shape.\n\nThree transformations covered:\n\n1. Reflection (mirroring):\n   - Use the 'Reflect about Line' tool\n   - Select the object, then select or create a line of reflection\n   - The reflected image is a mirror copy across the line\n\n2. Rotation (turning):\n   - Use the 'Rotate around Point' tool\n   - Select the object, then select or create a center point\n   - Enter the rotation angle (positive = counterclockwise, negative = clockwise)\n\n3. Translation (sliding):\n   - Use the 'Translate by Vector' tool\n   - Select the object, then select or create a vector\n   - The translated image moves in the direction and distance of the vector\n\n11-step activity:\n1. Create a polygon letter shape using the Polygon tool\n2. Create a segment for reflection\n3. Use Reflect about Line to mirror the shape\n4. Create a point for rotation center\n5. Apply Rotate around Point (e.g., 90 degrees clockwise)\n6. Create a vector for translation\n7. Apply Translate by Vector\n8. Move control points to explore how transformations behave dynamically\n\nKey insight: When you move the original shape, all transformed copies update automatically."
+  },
+  {
+    "title": "Solving Systems of Equations in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/solving-systems",
+    "content": "Solving Systems of Equations (Learn Calculator Suite - Basic)\n\nThis tutorial teaches solving a three-variable linear system using GeoGebra.\n\nExample system:\n  I:   x + 2y + 3z = 60\n  II:  2x - 3y + 5z = 68\n  III: -x + y - z = -13\n\nFour main steps:\n1. Input each equation separately into the Input Bar:\n   - Type: x + 2y + 3z = 60 and press Enter\n   - Type: 2x - 3y + 5z = 68 and press Enter\n   - Type: -x + y - z = -13 and press Enter\n2. Open the context menu of the third equation (click the three dots) and select 'Solve'\n3. GeoGebra automatically labels the equations and displays the values of x, y, z\n4. Toggle between numeric (decimal) and symbolic (exact) representations\n\nAlternative: You can also use the Solve command directly:\n  Solve({x + 2y + 3z = 60, 2x - 3y + 5z = 68, -x + y - z = -13}, {x, y, z})\n\nThis works for systems of any size - 2 variables, 3 variables, or more."
+  },
+  {
+    "title": "Calculating Derivatives in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/calculating-derivatives",
+    "content": "Calculating Derivatives in GeoGebra (Learn Calculator Suite - Basic)\n\nThis tutorial teaches computation and visualization of derivatives.\n\nFirst task - Polynomial derivatives:\n1. Enter a cubic polynomial function, e.g., f(x) = x^3 - 3x^2 + 2x\n2. Compute the first derivative using: f'(x) or Derivative(f)\n3. Evaluate the derivative at a specific point: f'(0) gives the slope at x = 0\n4. Find higher-order derivatives: Derivative(f, 2) gives the second derivative\n\nSecond task - Advanced operations:\n1. Work with exponential functions: g(x) = a * e^(bx) with parameter sliders\n2. Compute derivatives of trigonometric functions\n3. Calculate higher-order derivatives up to the fifth: Derivative(f, 5)\n4. Compute partial derivatives of multi-variable functions\n\nKey commands:\n- f'(x) or Derivative(f) - first derivative\n- Derivative(f, n) - nth derivative\n- f'(a) - evaluate derivative at point x = a\n\nThe derivative is automatically plotted in the Graphics View alongside the original function."
+  },
+  {
+    "title": "Definite and Indefinite Integrals in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/integrals",
+    "content": "Definite and Indefinite Integrals (Learn Calculator Suite - Basic)\n\nThis tutorial teaches the Integral command for calculating both types of integrals.\n\nFirst task - Fundamental operations:\n1. Define function f(x) = x^2\n2. Compute indefinite integral: Integral(f) gives (1/3)x^3 + C\n3. Calculate definite integral: Integral(f, 0, 3) gives the area under f from 0 to 3\n\nSecond task - Complex applications:\n1. Work with g(x) = cos(x) * sin(x)\n   - Integral(g) finds the primitive function\n   - Integral(g, 0, pi/2) computes the definite integral\n2. Handle h(x) = x^2 * e^(-x)\n   - Integral(h) for the indefinite integral\n   - Integral(h, 0, infinity) for improper integrals\n\nKey commands:\n- Integral(f) - indefinite integral (antiderivative)\n- Integral(f, a, b) - definite integral from a to b\n- The integral symbol can be typed using the virtual keyboard\n\nThe definite integral is visualized as a shaded area under the curve in the Graphics View."
+  },
+  {
+    "title": "Cylinder and Cube in GeoGebra 3D",
+    "category": "tutorial",
+    "path": "tutorial/basic/cylinder-and-cube",
+    "content": "Cylinder and Cube in 3D (Learn Calculator Suite - Basic)\n\nThis tutorial teaches 3D geometric shape construction using GeoGebra 3D tools.\n\nCylinder creation:\n- Use the command: Cylinder((2,-3,-1), (2,2,2), 2)\n  - First parameter: center of bottom circle\n  - Second parameter: center of top circle\n  - Third parameter: radius\n\nCube construction:\n1. Select the Cube tool from the Tools View\n2. Click two points to define one edge of the cube\n3. GeoGebra generates the complete cube\n\nMain steps:\n1. Configure settings: Enable grid display, explore different projection options (parallel, perspective)\n2. Navigate tools: Switch between Point tool, Cube tool, and Move tool\n3. Interactive exploration: Rotate the 3D view by dragging, zoom in/out\n4. Augmented Reality: On mobile devices, place 3D constructions on real-world surfaces using the AR button\n\nOther 3D commands:\n- Sphere((x,y,z), radius) - creates a sphere\n- Cone((x,y,z), (x2,y2,z2), radius) - creates a cone\n- Prism and Pyramid tools are also available"
+  },
+  {
+    "title": "Cross Sections of a Cone in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/cross-sections-cone",
+    "content": "Cross Sections of a Cone (Learn Calculator Suite - Basic)\n\nThis tutorial teaches creation and visualization of cross sections formed by intersecting a cone with a plane.\n\nKey steps:\n1. Create two points to define the cone's axis\n2. Use the Cone tool to construct a cone with radius 3\n3. Generate three additional points on different axes\n4. Create a plane through the three points using the Plane tool\n5. Use the 'Intersect Two Surfaces' tool to find the cone-plane intersection\n\nInteractive features:\n- Rotate the 3D visualization to explore from different angles\n- Drag the points to adjust the plane's position and orientation\n- Switch to 2D View mode to examine the cross-section shape\n- Use Augmented Reality on mobile devices\n\nDifferent plane orientations produce various conic sections:\n- Circle: Plane perpendicular to the cone's axis\n- Ellipse: Plane at an angle to the axis (not through the base)\n- Parabola: Plane parallel to one side of the cone\n- Hyperbola: Plane intersects both halves of a double cone"
+  },
+  {
+    "title": "Binomial Distribution in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/basic/binomial-distribution",
+    "content": "Binomial Distribution (Learn Calculator Suite - Basic)\n\nThis tutorial teaches probability calculations using the binomial distribution with a coin-toss scenario (10 coin flips, p = 0.5).\n\nCalculation tasks:\n\n1. Cumulative probability (3 or fewer heads):\n   - Use 'Left Sided' button, set upper bound to 3\n   - P(X <= 3)\n\n2. Right-tail probability (more than 5 heads):\n   - Use 'Right Sided' button, set lower bound to 5\n   - P(X > 5)\n\n3. Interval probability (7, 8, or 9 heads):\n   - Use 'Interval' button, set bounds to 7 and 9\n   - P(7 <= X <= 9)\n\n4. Point probability (exactly 2 heads):\n   - Use 'Interval' button with both bounds set to 2\n   - P(X = 2)\n\n5. Inverse probability:\n   - Find interval limits for a given probability (e.g., 0.8906)\n\nHow to set up:\n1. Open the Probability calculator\n2. Select 'Binomial' from the distribution dropdown\n3. Set parameters: n = 10, p = 0.5\n4. Use the Left Sided, Right Sided, or Interval buttons\n5. You can also drag interval limits directly in the graph"
+  },
+  {
+    "title": "Complex Numbers in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/advanced/complex-numbers",
+    "content": "Complex Numbers (Learn Calculator Suite - Advanced)\n\nThis tutorial teaches working with complex numbers in rectangular and polar coordinate representations.\n\nKey skills:\n\n1. Creating complex numbers:\n   - Use the Complex Number tool from the Tools View\n   - Click on the complex plane to place complex numbers\n   - Points are auto-labeled as z1, z2, etc.\n\n2. Coordinate conversion:\n   - Rectangular form: z = a + bi (real part + imaginary part)\n   - Polar form: z = r * e^(i*theta) (magnitude and angle)\n   - Switch between forms using the settings panel\n\n3. Visualization:\n   - The complex plane shows the real axis (horizontal) and imaginary axis (vertical)\n   - Drag a complex number to see both rectangular and polar values update\n\n4. Grid customization:\n   - Switch from standard Cartesian grid to polar coordinate grid\n   - This helps visualize the magnitude and angle of complex numbers\n\nUseful commands:\n- abs(z) - magnitude of complex number\n- arg(z) - argument (angle) of complex number\n- conjugate(z) - complex conjugate\n- real(z) and imaginary(z) - extract parts"
+  },
+  {
+    "title": "Monotonicity of a Function in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/advanced/monotonicity",
+    "content": "Monotonicity of a Function (Learn Calculator Suite - Advanced)\n\nThis tutorial explores the relationship between a function's derivative and its monotonicity (where it increases or decreases).\n\nSeven-step process:\n1. Enter polynomial function: f(x) = -0.25(x-1)(x+1)(x+3)\n2. Graph the derivative: f'(x) to visualize the rate of change\n3. Use Extremum(f) to locate and display critical points (maxima and minima)\n4. Shade regions where f'(x) > 0 (function is increasing):\n   - Use: Function(f, leftBound, rightBound) for the increasing intervals\n5. Shade regions where f'(x) < 0 (function is decreasing)\n6. Customize visualization using the Style Bar (colors, line styles)\n7. Observe the relationship:\n   - Where f'(x) > 0, f(x) is increasing\n   - Where f'(x) < 0, f(x) is decreasing\n   - Where f'(x) = 0, f(x) has an extremum\n\nKey insight: The sign of the derivative tells you the direction of the original function. Positive derivative = going up, negative derivative = going down."
+  },
+  {
+    "title": "Concept of Congruence in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/advanced/congruence",
+    "content": "Concept of Congruence (Learn Calculator Suite - Advanced)\n\nThis tutorial teaches how to determine whether two geometric figures are congruent using dynamic geometry.\n\nCore task: Create two triangles and check if both figures are congruent or not.\n\nSteps:\n1. Set up a grid in the Geometry app\n2. Construct two triangles using the Polygon tool\n3. Format vertices using style tools (colors, labels)\n4. Use the AreCongruent() command to check:\n   AreCongruent(triangle1, triangle2)\n   Returns true or false\n5. For dynamic feedback, use:\n   If(AreCongruent(t1, t2), \"Congruent\", \"Not congruent\")\n   This displays a text that updates as you move vertices\n6. Manipulate vertices to create congruent pairs and observe the feedback\n\nKey concept: Two figures are congruent if one can be transformed into the other using only rigid motions (translations, rotations, reflections) - no stretching or resizing."
+  },
+  {
+    "title": "Geoboard with Automatic Feedback in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/advanced/geoboard",
+    "content": "Geoboard and Automatic Feedback (Learn Calculator Suite - Advanced)\n\nThis tutorial teaches creation of a virtual geoboard with automatic feedback to verify geometric properties (focus on parallelograms).\n\nCreating the geoboard:\n- Use the command: Sequence(Sequence((a,b), a, 1, 10), b, 1, 10)\n- This creates a 10x10 grid of points\n\nBuilding shapes:\n1. Place points on the grid\n2. Connect points with segments using the Segment tool\n3. Form quadrilaterals by creating four segments\n\nAutomatic validation:\n- Use the formula: If(f || h && g || i, \"Parallelogram\", \"No Parallelogram\")\n  - f, g, h, i are the four segments\n  - The || symbol checks if segments are parallel\n- This provides instant feedback about whether the shape is a parallelogram\n\nHow it works:\n- As you drag vertices on the geoboard, the feedback text updates in real time\n- If opposite sides are parallel, it confirms \"Parallelogram\"\n- Otherwise, it shows \"No Parallelogram\"\n\nMobile tip: Set labeling to 'New Points Only' via Settings > General."
+  },
+  {
+    "title": "Volume of Revolution in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/advanced/volume-of-revolution",
+    "content": "Volume of Revolution (Learn Calculator Suite - Advanced)\n\nThis tutorial teaches calculation of volumes created when a function rotates around the y-axis.\n\nFormula: V = pi * Integral(InverseFunction(f)^2, a, b) for rotation around y-axis.\n\nPractical application - Finding glass height:\nProblem: A glass shape is formed by rotating f(x) = x^4/25 around the y-axis. What height holds exactly 500 milliliters?\n\nSteps:\n1. Enter the function: f(x) = x^4/25\n2. Calculate the inverse function: Invert(f)\n   Result: f_inverse(x) = (25x)^(1/4) * 25^(1/4)\n3. Set up the volume equation:\n   pi * Integral(Invert(f)^2, 0, h) = 500\n4. Solve the equation for h:\n   Solve(pi * Integral(Invert(f)^2, 0, h) = 500)\n5. Result: h is approximately 13.16 cm\n6. Use numerical tools to verify the solution\n\nThis uses: Integral calculus, inverse functions, equation solving, and the CAS Calculator."
+  },
+  {
+    "title": "Fourth Degree Polynomial in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/advanced/fourth-degree-polynomial",
+    "content": "Fourth Degree Polynomial (Learn Calculator Suite - Advanced)\n\nThis tutorial teaches determination of coefficients of a fourth-degree polynomial using given constraints.\n\nProblem: Find f(x) = ax^4 + bx^3 + cx^2 + dx + k given:\n- Maximum point at (1, 10)\n- Inflection point at (4, -1)\n- Root at x = -3\n\nSetting up equations from conditions:\n1. f(1) = 10 (point on graph): a + b + c + d + k = 10\n2. f'(1) = 0 (maximum, first derivative = zero): 4a + 3b + 2c + d = 0\n3. f(4) = -1 (point on graph): 256a + 64b + 16c + 4d + k = -1\n4. f''(4) = 0 (inflection point, second derivative = zero): 192a + 24b + 2c = 0\n5. f(-3) = 0 (root): 81a - 27b + 9c - 3d + k = 0\n\nUsing GeoGebra:\n1. Enter the general polynomial and compute its derivatives\n2. Set up all five equations\n3. Use Solve() command to find a, b, c, d, k\n4. Use Substitute() to verify the solution\n5. Plot the result to visually confirm the conditions\n\nThis combines polynomial algebra, calculus, and CAS computation."
+  },
+  {
+    "title": "Quadric Surfaces in GeoGebra 3D",
+    "category": "tutorial",
+    "path": "tutorial/advanced/quadric-surfaces",
+    "content": "Quadric Surfaces (Learn Calculator Suite - Advanced)\n\nThis tutorial teaches exploration of quadric surfaces (3D shapes defined by second-degree polynomial equations) in GeoGebra 3D Calculator.\n\nHow to create quadric surfaces:\n1. Open the 3D Calculator\n2. Enter the equation in the Input Bar\n3. GeoGebra automatically generates sliders for parameters a, b, c\n4. Drag sliders to observe how parameter changes affect the surface shape\n\nSpecific equations to explore:\n\n1. Ellipsoid: x^2/a^2 + y^2/b^2 + z^2/c^2 = 1\n   - All cross-sections are ellipses\n   - a, b, c control the semi-axes lengths\n\n2. Hyperboloid of one sheet: x^2/a^2 + y^2/b^2 - z^2/c^2 = 1\n   - Connected surface with a 'waist'\n\n3. Hyperboloid of two sheets: -x^2/a^2 - y^2/b^2 + z^2/c^2 = 1\n   - Two separate pieces\n\n4. Hyperbolic paraboloid: z = x^2/a^2 - y^2/b^2\n   - Saddle-shaped surface\n\nAugmented Reality: On mobile devices, use the AR button to project 3D constructions onto real-world surfaces."
+  },
+  {
+    "title": "Polyhedrons with Reflections in GeoGebra 3D",
+    "category": "tutorial",
+    "path": "tutorial/advanced/polyhedrons-reflections",
+    "content": "Polyhedrons with Reflections (Learn Calculator Suite - Advanced)\n\nThis tutorial teaches construction of 3D polyhedrons using geometric reflections across planes.\n\nTen-step process:\n1. Open the 3D Calculator and the Tools View\n2. Create points on each coordinate axis using the Point tool\n3. Form a triangle connecting these three points using the Polygon tool\n4. Reflect the triangle across a coordinate plane using 'Reflect about Plane' tool\n5. Create new planes using axis pairs (e.g., the xOy plane, yOz plane)\n6. Reflect shapes across additional planes to build up the solid\n7. Repeat reflections to create multiple copies forming a symmetric solid\n8. Hide the planes via the Algebra View (click visibility dots)\n9. Remove axes and grid display for a clean view\n10. Explore the final 3D construction by rotating the view\n\nResult: A symmetric polyhedron built entirely from reflections of one triangle.\n\nKey tools used:\n- Point tool, Polygon tool\n- Reflect about Plane tool\n- Show/Hide Objects\n- 3D rotation and navigation\n\nAugmented Reality is available on mobile devices to view the result in real space."
+  },
+  {
+    "title": "Normal Distribution in GeoGebra",
+    "category": "tutorial",
+    "path": "tutorial/advanced/normal-distribution",
+    "content": "Normal Distribution (Learn Calculator Suite - Advanced)\n\nThis tutorial teaches probability calculations using the normal distribution with a real-world manufacturing scenario.\n\nScenario: A machine produces screws with:\n- Mean length: mu = 4 inches\n- Standard deviation: sigma = 0.1 inches\n\nCalculation tasks:\n\n1. Screws shorter than 3.8 inches:\n   - Use 'Left Sided' button\n   - Set upper bound to 3.8\n   - Result: P(X <= 3.8)\n\n2. Screws longer than 4.3 inches:\n   - Use 'Right Sided' button\n   - Set lower bound to 4.3\n   - Result: P(X >= 4.3)\n\n3. Screws between 3.9 and 4.1 inches:\n   - Use 'Interval' button\n   - Set bounds to 3.9 and 4.1\n   - Result: P(3.9 <= X <= 4.1)\n\n4. Screws shorter than 3.8 OR longer than 4.3:\n   - Use 'Two Tailed' button\n   - Set both bounds\n   - Result: Combined tail probabilities\n\nSetup:\n1. Open the Probability calculator\n2. Select 'Normal' from the dropdown\n3. Set mean = 4 and standard deviation = 0.1\n4. Use the calculation buttons as described above"
+  },
+  {
+    "title": "GeoGebra YouTube Tutorial Resources",
+    "category": "tutorial",
+    "path": "tutorial/advanced/youtube-tutorials",
+    "content": "GeoGebra YouTube Tutorial Resources (Learn Calculator Suite - Advanced)\n\nThe official GeoGebra YouTube channel provides video tutorials organized into four main playlist categories:\n\n1. GeoGebra Graphing Calculator: Tutorials on plotting and analyzing functions\n2. GeoGebra Geometry: Tutorials on constructing geometric figures\n3. GeoGebra 3D Calculator: Tutorials on three-dimensional visualizations\n4. GeoGebra Classic: Tutorials on the traditional full-featured version\n\nTopics covered in the videos include:\n- Coordinate systems and graphing\n- Derivatives and calculus\n- Vectors and linear algebra\n- Geometric constructions\n- 3D shapes and surfaces\n\nVisit the official GeoGebra YouTube channel for self-directed learning through video tutorials."
+  }
+]
