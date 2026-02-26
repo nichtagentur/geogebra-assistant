@@ -25,10 +25,8 @@
   --ggb-neutral-800: #2f2f33;
   --ggb-neutral-900: #1c1c1f;
 
-  /* GeoGebra Design System - Accent Teal */
-  --ggb-teal-200: #ccfffa;
-  --ggb-teal-500: #57d9ca;
-  --ggb-teal-700: #388c83;
+  /* GeoGebra Logo accent */
+  --ggb-logo-purple: #9999ff;
 
   /* Semantic tokens */
   --background: var(--ggb-neutral-100);
@@ -36,11 +34,8 @@
   --primary: var(--ggb-purple-600);
   --primary-hover: var(--ggb-purple-700);
   --primary-light: var(--ggb-purple-50);
-  --primary-selection: rgba(101, 87, 210, 0.2);
   --surface: #ffffff;
   --border: var(--ggb-neutral-300);
-  --text-secondary: var(--ggb-neutral-600);
-  --text-tertiary: var(--ggb-neutral-500);
 }
 
 @theme inline {
@@ -51,14 +46,13 @@
   --color-primary-light: var(--primary-light);
   --color-surface: var(--surface);
   --color-border: var(--border);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-nunito-sans);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
 /* Streaming cursor animation */
