@@ -1,18 +1,9 @@
 import { NextRequest } from 'next/server';
 import Anthropic from '@anthropic-ai/sdk';
 import { searchDocs, Doc } from '@/lib/search';
-import fs from 'fs';
-import path from 'path';
+import knowledgeBaseData from '../../../../public/knowledge-base.json';
 
-let knowledgeBase: Doc[] | null = null;
-
-function getKnowledgeBase(): Doc[] {
-  if (!knowledgeBase) {
-    const filePath = path.join(process.cwd(), 'public', 'knowledge-base.json');
-    knowledgeBase = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
-  }
-  return knowledgeBase!;
-}
+const knowledgeBase: Doc[] = knowledgeBaseData as Doc[];
 
 const SYSTEM_PROMPT = `You are the GeoGebra Calculator Suite Assistant. You help students and teachers learn how to use GeoGebra tools and commands.
 
@@ -38,8 +29,7 @@ export async function POST(req: NextRequest) {
     return Response.json({ error: 'API key not configured' }, { status: 500 });
   }
 
-  const docs = getKnowledgeBase();
-  const relevant = searchDocs(docs, message, 8);
+  const relevant = searchDocs(knowledgeBase, message, 8);
 
   const contextBlock = relevant
     .map((doc, i) => `--- Manual Section ${i + 1}: ${doc.title} (${doc.category}) ---\n${doc.content}`)
