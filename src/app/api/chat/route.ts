@@ -69,9 +69,8 @@ export async function POST(req: NextRequest) {
           controller.enqueue(encoder.encode('data: [DONE]\n\n'));
           controller.close();
         } catch (err: unknown) {
-          const msg = err instanceof Error ? err.message : String(err);
-          console.error('Stream error:', msg);
-          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: `\n\n[Error: ${msg}]` })}\n\n`));
+          console.error('Stream error:', err instanceof Error ? err.message : String(err));
+          controller.enqueue(encoder.encode(`data: ${JSON.stringify({ text: '\n\n[The response was interrupted. Please try again.]' })}\n\n`));
           controller.enqueue(encoder.encode('data: [DONE]\n\n'));
           controller.close();
         }
@@ -86,8 +85,7 @@ export async function POST(req: NextRequest) {
       },
     });
   } catch (err: unknown) {
-    const errorMessage = err instanceof Error ? err.message : 'Unknown error';
-    console.error('Chat API error:', errorMessage);
-    return Response.json({ error: errorMessage }, { status: 500 });
+    console.error('Chat API error:', err instanceof Error ? err.message : 'Unknown error');
+    return Response.json({ error: 'Something went wrong. Please try again.' }, { status: 500 });
   }
 }
